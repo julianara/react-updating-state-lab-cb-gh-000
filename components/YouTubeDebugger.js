@@ -8,7 +8,9 @@ export default class YouTubeDebugger extends React.Component {
   }
   
   handleClick =()=> {
-    this.setState();
+    this.setState({
+      timesClicked: ${this.state.timeClicked + 1},
+    });
   }
   
   render() {
