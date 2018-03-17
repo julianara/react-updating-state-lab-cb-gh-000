@@ -9,7 +9,7 @@ export default class YouTubeDebugger extends React.Component {
   
   handleClick =()=> {
     this.setState({
-      timesClicked: ${this.state.timeClicked + 1},
+      timesClicked: ++this.state.timeClicked,
     });
   }
   
