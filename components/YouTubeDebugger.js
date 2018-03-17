@@ -5,6 +5,8 @@ export default class YouTubeDebugger extends React.Component {
     this.state = {
       timesClicked: 0,
     };
+    
+    this.handleClick = this.handleClick.bind(this);
   }
   
   handleClick =()=> {
@@ -14,6 +16,8 @@ export default class YouTubeDebugger extends React.Component {
   }
   
   render() {
-    return ();
+    return (
+      <button onClick={this.handleClick}></button>
+      );
   }
 }
